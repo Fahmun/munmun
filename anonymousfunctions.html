@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+
+
+           /*(function(win){
+                win._E = function(arg){
+                    if(arg.startsWith(".")){
+                        return documrnt.getElementsByClassName(arg.substring(1));
+                    }else { 
+                        return document.getElementById(arg);
+
+                    }
+                }
+
+            })(window);
+
+            var run = function (){
+               _E("out").innerHTML =  "Hello" + _E("name").value;
+               for(var ele of _E(".aClass")){
+                   ele.innerHTML = "Hello" + _E("name").value;
+
+               }
+            };*/
+
+            
+                
+            
+
+            setTimeout(function (){
+                console.log("Hello!");
+
+            }, 3000);
+
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+
+      Name: <input type = "text" id = "name">
+        
+        <button onclick = "run()"> Run</button>
+        
+        <p id = "out"></p>
+        <h1 class = "aClass"></h1>
+        <h2 class = "aClass"></h2>
+
+    </body>
+</html>
