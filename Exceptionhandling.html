@@ -1,0 +1,43 @@
+<html>
+    <head>
+        
+
+    </head>
+
+
+    <body>
+        <h1> Exception Handling</h1>
+<p> Input a number between 5 and 10</p>
+<input id=" demo" type="text">
+<button type="button" onclick="myfunction()">Test Input  </button>
+<p id="message"></p>
+
+<script type="text/javascript">
+
+    function myfunction(){
+        var message , x;
+        document.getElementById("message").innerHTML="";
+        x= document.getElementById("demo").value;
+
+        try{
+            if(x=="") throw "Input is Empty";
+            if(isNaN(x)) throw "Input is not a number";
+            x= Number(x);
+            if(x<5 || x>10) throw "Number should be between 5 and 10";
+
+
+        }
+
+        catch(e){
+            document.getElementById("meassage").innerHTML=e;
+
+        }
+        finally{
+            document.getElementById("demo").value="";
+        }
+
+    }
+</script>
+
+    </body>
+</html>

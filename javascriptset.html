@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+    </head>
+<script type="text/javascript">
+
+let mySet= new Set();
+
+mySet.add(60);
+mySet.add(21);
+mySet.add(56);
+mySet.add(60);
+mySet.add(75);
+mySet.add(80);
+
+mySet.add({
+    name: 'ABC',
+    age: 24
+}
+
+);
+mySet.add("Course");
+mySet.add(67.98);
+console.log("MySet Length:" + mySet.size);
+
+//check for value
+
+console.log('Does the set contain the number 25?' + mySet.has(25));
+
+//Delete item
+
+mySet.delete("Course");
+
+//loop through set
+
+for (let item of mySet){
+    console.log(item);
+}
+
+console.log(mySet);
+
+//Convert to Array
+let myArray = Array.from(mySet);
+
+console.log(myArray);
+
+
+
+
+
+</script>
+
+
+    <body>
+
+    </body>
+</html>

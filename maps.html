@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="ut-8">
+
+        <tittle> Js Maps</tittle>
+
+    </head>
+
+    <body>
+        <script type="text/javascript">
+
+            let course= new Map();
+
+            course.set('java', 5);
+            course.set('Html',2);
+            course.set('CSS', 10);
+
+            let javaCount = course.get('java');
+            console.log(javaCount);
+           for (let [key , value] of course){
+                console.log(key + ':' + value);
+            }
+
+        </script>
+
+    </body>
+</html>
